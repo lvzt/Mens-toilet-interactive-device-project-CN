@@ -1,75 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>男士如厕互动装置项目研发报告 by lvzt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Mens-toilet-interactive-device-project-cn by lvzt</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Mens-toilet-interactive-device-project-cn</h1>
-        <h2></h2>
-        <a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <section class="page-header">
+      <h1 class="project-name">男士如厕互动装置项目研发报告</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN" class="btn">View on GitHub</a>
+      <a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <section class="main-content">
+      <p><em>本文为了简化《男士如厕互动装置项目》文档的阅读量而编写的，旨在将简要介绍如何通过定义、衡量、探索、优化、开发、确认、执行和迭代这8个步骤开发一个新产品。本文更多采用图表形式展示其中内容，详细过程请参阅《男士如厕互动装置项目》文档。</em></p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<p><a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/wiki/Complete-Article">完整文档</a></p>
+
+<p><em><strong>版权归作者所有，如想转载请与作者联系</strong></em></p>
+
+<h1>
+<a id="1-定义阶段" class="anchor" href="#1-%E5%AE%9A%E4%B9%89%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. 定义阶段</h1>
+
+<h2>
+<a id="项目选择" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E9%80%89%E6%8B%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>项目选择：</h2>
+
+<p>近日有人前往日本发现在一些场所的男士卫生间里有一些供如厕时进行互动游戏的装置。鉴于此装置的趣味性，公司决定仿照日本此产品进行自主研发。经过讨论，该如厕互动装置可以用于大型商场，供商场内的成年男士在如厕时进行娱乐使用，并提供给使用者该商场内促销相关的信息。</p>
+
+<h2>
+<a id="项目草图" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E8%8D%89%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>项目草图：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/Toilet.jpg" alt=""></p>
+
+<h2>
+<a id="识别所有者用户和客户" class="anchor" href="#%E8%AF%86%E5%88%AB%E6%89%80%E6%9C%89%E8%80%85%E7%94%A8%E6%88%B7%E5%92%8C%E5%AE%A2%E6%88%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>识别所有者、用户和客户：</h2>
+
+<p>该装置的应用环境为大型商场，但考虑到年龄问题，所以此互动装置仅面向成年人。
+》所有者：本公司；<br>
+客户：大型商场；
+用户：普通成年男性；</p>
+
+<h2>
+<a id="项目用例" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E7%94%A8%E4%BE%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>项目用例：</h2>
+
+<p>用例指的是用户实际使用系统的一个范例。</p>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/use%20case%20diagram.jpg" alt=""></p>
+
+<h2>
+<a id="描述用例行为" class="anchor" href="#%E6%8F%8F%E8%BF%B0%E7%94%A8%E4%BE%8B%E8%A1%8C%E4%B8%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>描述用例行为：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/activity%20diagram%20blackbox.jpg" alt=""></p>
+
+<h2>
+<a id="根据用例行为总结该装置的功能需求" class="anchor" href="#%E6%A0%B9%E6%8D%AE%E7%94%A8%E4%BE%8B%E8%A1%8C%E4%B8%BA%E6%80%BB%E7%BB%93%E8%AF%A5%E8%A3%85%E7%BD%AE%E7%9A%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>根据用例行为总结该装置的功能需求：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/functional%20requirement.jpg" alt=""></p>
+
+<h1>
+<a id="2-衡量阶段" class="anchor" href="#2-%E8%A1%A1%E9%87%8F%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. 衡量阶段</h1>
+
+<h2>
+<a id="产品目标描述分析" class="anchor" href="#%E4%BA%A7%E5%93%81%E7%9B%AE%E6%A0%87%E6%8F%8F%E8%BF%B0%E5%88%86%E6%9E%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>产品目标描述分析：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/product%20goal%20analysis.jpg" alt=""></p>
+
+<h2>
+<a id="经过分配权重并排序后的产品目标" class="anchor" href="#%E7%BB%8F%E8%BF%87%E5%88%86%E9%85%8D%E6%9D%83%E9%87%8D%E5%B9%B6%E6%8E%92%E5%BA%8F%E5%90%8E%E7%9A%84%E4%BA%A7%E5%93%81%E7%9B%AE%E6%A0%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>经过分配权重并排序后的产品目标：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/pie%20chart%20of%20product%20goal.jpg" alt=""></p>
+
+<h2>
+<a id="确定有效性测量的竞争基准" class="anchor" href="#%E7%A1%AE%E5%AE%9A%E6%9C%89%E6%95%88%E6%80%A7%E6%B5%8B%E9%87%8F%E7%9A%84%E7%AB%9E%E4%BA%89%E5%9F%BA%E5%87%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>确定有效性测量的竞争基准：</h2>
+
+<p>世嘉公司产品：</p>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/Sega%20company%20product.jpg" alt=""></p>
+
+<p>印度研发产品：</p>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/Indian%20product.jpg" alt=""></p>
+
+<p>英国某公司产品：</p>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/British%20product.jpg" alt=""></p>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/three%20products%20radar%20diagram.jpg" alt=""></p>
+
+<h2>
+<a id="技术性能测量分析" class="anchor" href="#%E6%8A%80%E6%9C%AF%E6%80%A7%E8%83%BD%E6%B5%8B%E9%87%8F%E5%88%86%E6%9E%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术性能测量分析：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/complete%20house%20of%20quality.jpg" alt=""></p>
+
+<h2>
+<a id="得到最终的原始需求" class="anchor" href="#%E5%BE%97%E5%88%B0%E6%9C%80%E7%BB%88%E7%9A%84%E5%8E%9F%E5%A7%8B%E9%9C%80%E6%B1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>得到最终的原始需求：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/final%20original%20requirements.jpg" alt=""></p>
+
+<h1>
+<a id="3-探索阶段" class="anchor" href="#3-%E6%8E%A2%E7%B4%A2%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. 探索阶段</h1>
+
+<h2>
+<a id="探索可行性方案并进行裁剪和扩展" class="anchor" href="#%E6%8E%A2%E7%B4%A2%E5%8F%AF%E8%A1%8C%E6%80%A7%E6%96%B9%E6%A1%88%E5%B9%B6%E8%BF%9B%E8%A1%8C%E8%A3%81%E5%89%AA%E5%92%8C%E6%89%A9%E5%B1%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>探索可行性方案并进行裁剪和扩展：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/trim%20and%20expand.jpg" alt=""></p>
+
+<h2>
+<a id="识别子系统" class="anchor" href="#%E8%AF%86%E5%88%AB%E5%AD%90%E7%B3%BB%E7%BB%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>识别子系统：</h2>
+
+<blockquote>
+<p>通过归纳可以得出各子系统：
+人体探测子系统；
+提示音探测子系统；
+尿液探测子系统；
+显示子系统；
+数据处理子系统；
+游戏子系统；</p>
+</blockquote>
+
+<h1>
+<a id="4-优化阶段" class="anchor" href="#4-%E4%BC%98%E5%8C%96%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. 优化阶段</h1>
+
+<h2>
+<a id="为产品目标分配权重对设计方案进行比较并作出选择" class="anchor" href="#%E4%B8%BA%E4%BA%A7%E5%93%81%E7%9B%AE%E6%A0%87%E5%88%86%E9%85%8D%E6%9D%83%E9%87%8D%E5%AF%B9%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88%E8%BF%9B%E8%A1%8C%E6%AF%94%E8%BE%83%E5%B9%B6%E4%BD%9C%E5%87%BA%E9%80%89%E6%8B%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>为产品目标分配权重对设计方案进行比较并作出选择：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/select%20alternative%20after%20calculating.jpg" alt=""></p>
+
+<h1>
+<a id="5-开发阶段" class="anchor" href="#5-%E5%BC%80%E5%8F%91%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. 开发阶段</h1>
+
+<h2>
+<a id="根据子系统功能设计系统行为" class="anchor" href="#%E6%A0%B9%E6%8D%AE%E5%AD%90%E7%B3%BB%E7%BB%9F%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E8%A1%8C%E4%B8%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>根据子系统功能设计系统行为：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/activity%20diagram%20v1.1.jpg" alt=""></p>
+
+<h2>
+<a id="识别系统状态" class="anchor" href="#%E8%AF%86%E5%88%AB%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>识别系统状态：</h2>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a id="人体探测子系统状态图" class="anchor" href="#%E4%BA%BA%E4%BD%93%E6%8E%A2%E6%B5%8B%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>人体探测子系统状态图：</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/%E4%BA%BA%E4%BD%93%E6%8E%A2%E6%B5%8B%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE.jpg" alt=""></p>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a id="提示音探测子系统状态图" class="anchor" href="#%E6%8F%90%E7%A4%BA%E9%9F%B3%E6%8E%A2%E6%B5%8B%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>提示音探测子系统状态图：</h3>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/%E6%8F%90%E7%A4%BA%E9%9F%B3%E6%8E%A2%E6%B5%8B%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE.jpg" alt=""></p>
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="尿液探测子系统状态图" class="anchor" href="#%E5%B0%BF%E6%B6%B2%E6%8E%A2%E6%B5%8B%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>尿液探测子系统状态图：</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-        </section>
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/%E5%B0%BF%E6%B6%B2%E6%8E%A2%E6%B5%8B%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE.jpg" alt=""></p>
 
-        <aside id="sidebar">
-          <a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+<h3>
+<a id="游戏子系统状态图" class="anchor" href="#%E6%B8%B8%E6%88%8F%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>游戏子系统状态图：</h3>
 
-          <p class="repo-owner"><a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN"></a> is maintained by <a href="https://github.com/lvzt">lvzt</a>.</p>
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/%E6%B8%B8%E6%88%8F%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE.jpg" alt=""></p>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+<h3>
+<a id="显示子系统状态图" class="anchor" href="#%E6%98%BE%E7%A4%BA%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>显示子系统状态图：</h3>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/%E6%98%BE%E7%A4%BA%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE.jpg" alt=""></p>
+
+<h3>
+<a id="数据处理子系统状态图" class="anchor" href="#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>数据处理子系统状态图：</h3>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E5%9B%BE.jpg" alt=""></p>
+
+<h2>
+<a id="衍生需求分析并追溯到原始需求" class="anchor" href="#%E8%A1%8D%E7%94%9F%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%B9%B6%E8%BF%BD%E6%BA%AF%E5%88%B0%E5%8E%9F%E5%A7%8B%E9%9C%80%E6%B1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>衍生需求分析并追溯到原始需求：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/trace%20back%20to%20original%20requirement.jpg" alt=""></p>
+
+<h2>
+<a id="识别功能关系" class="anchor" href="#%E8%AF%86%E5%88%AB%E5%8A%9F%E8%83%BD%E5%85%B3%E7%B3%BB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>识别功能关系：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/functional%20matrix.jpg" alt=""></p>
+
+<h2>
+<a id="状态变化视图" class="anchor" href="#%E7%8A%B6%E6%80%81%E5%8F%98%E5%8C%96%E8%A7%86%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>状态变化视图：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/state_change.jpg" alt=""></p>
+
+<p><em>注：根据此状态变化视图已经可以申请发明专利</em></p>
+
+<h2>
+<a id="接口识别" class="anchor" href="#%E6%8E%A5%E5%8F%A3%E8%AF%86%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>接口识别：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/identify%20interface%20analysis.jpg" alt=""></p>
+
+<h2>
+<a id="设计草图" class="anchor" href="#%E8%AE%BE%E8%AE%A1%E8%8D%89%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>设计草图：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/design%20sketch.jpg" alt=""></p>
+
+<h2>
+<a id="粗略材料清单及成本分析" class="anchor" href="#%E7%B2%97%E7%95%A5%E6%9D%90%E6%96%99%E6%B8%85%E5%8D%95%E5%8F%8A%E6%88%90%E6%9C%AC%E5%88%86%E6%9E%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>粗略材料清单及成本分析：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/cost%20analysis.jpg" alt=""></p>
+
+<h1>
+<a id="6-确认阶段" class="anchor" href="#6-%E7%A1%AE%E8%AE%A4%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. 确认阶段</h1>
+
+<h2>
+<a id="开发测试计划" class="anchor" href="#%E5%BC%80%E5%8F%91%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>开发测试计划：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/test%20plan.jpg" alt=""></p>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/non-functional%20test.jpg" alt=""></p>
+
+<h2>
+<a id="故障分析" class="anchor" href="#%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>故障分析：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/FMEA.jpg" alt=""></p>
+
+<h1>
+<a id="7-执行阶段" class="anchor" href="#7-%E6%89%A7%E8%A1%8C%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7. 执行阶段</h1>
+
+<h2>
+<a id="开发项目任务列表并跟踪完成情况" class="anchor" href="#%E5%BC%80%E5%8F%91%E9%A1%B9%E7%9B%AE%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8%E5%B9%B6%E8%B7%9F%E8%B8%AA%E5%AE%8C%E6%88%90%E6%83%85%E5%86%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>开发项目任务列表并跟踪完成情况：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/trace%20task%20completion.jpg" alt=""></p>
+
+<h2>
+<a id="任务输入-输出矩阵" class="anchor" href="#%E4%BB%BB%E5%8A%A1%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E7%9F%A9%E9%98%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>任务输入-输出矩阵：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/task%20input%20output%20matrix.jpg" alt=""></p>
+
+<h2>
+<a id="根据可用资源调整后的任务时间安排" class="anchor" href="#%E6%A0%B9%E6%8D%AE%E5%8F%AF%E7%94%A8%E8%B5%84%E6%BA%90%E8%B0%83%E6%95%B4%E5%90%8E%E7%9A%84%E4%BB%BB%E5%8A%A1%E6%97%B6%E9%97%B4%E5%AE%89%E6%8E%92" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>根据可用资源调整后的任务时间安排：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/project%20schedule%20in%20Gantt%20after%20adjust%20with%20delay.jpg" alt=""></p>
+
+<h2>
+<a id="实施评审" class="anchor" href="#%E5%AE%9E%E6%96%BD%E8%AF%84%E5%AE%A1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>实施评审：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/project%20review.jpg" alt=""></p>
+
+<h1>
+<a id="8-迭代阶段" class="anchor" href="#8-%E8%BF%AD%E4%BB%A3%E9%98%B6%E6%AE%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>8. 迭代阶段</h1>
+
+<h2>
+<a id="退回策略" class="anchor" href="#%E9%80%80%E5%9B%9E%E7%AD%96%E7%95%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>退回策略：</h2>
+
+<p><img src="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN/blob/master/Image/backtracking%20analysis.jpg" alt=""></p>
+
+<p><em><strong>版权归作者所有，如想转载请与作者联系</strong></em></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/lvzt/Mens-toilet-interactive-device-project-CN">男士如厕互动装置项目研发报告</a> is maintained by <a href="https://github.com/lvzt">lvzt</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
 
   
   </body>
