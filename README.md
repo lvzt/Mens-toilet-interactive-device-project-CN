@@ -1,4 +1,4 @@
-Welcome to the Getting-Design-Right-CN project!
+Welcome to the Men's toilet interactive device project !
 
 本文根据《Getting Design Right》一书中所描述的流程开发一件新产品，即：男士如厕互动装置。该书由美国康奈尔大学教授 Peter L. Jackson 编写，并由该大学系统工程系 David Schneider 教授推荐。
 
